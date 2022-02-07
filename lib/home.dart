@@ -48,9 +48,11 @@ class _HomeState extends State<Home> {
       setState(() {
         _wordColors[_attempts] = response.body;
         _wordsEnabled[_attempts] = false;
-        if (response.body != 'ggggg') {
+        if (response.body != 'ggggg' && _attempts < 5) {
           _attempts++;
           _wordsEnabled[_attempts] = true;
+        } else if (response.body != 'ggggg') {
+          WToast.show('Oops!!');
         } else {
           gameover = true;
           _createShareMessage();
