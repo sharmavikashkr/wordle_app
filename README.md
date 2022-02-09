@@ -25,6 +25,8 @@ This handler calls the wordle-api, gets the color code, and updates the componen
 * <ins>The shareMessage builder</ins> (inside home component)
 This piece takes care of creating the share message if the game is successfully won.
 
+Complete details [here](https://betterprogramming.pub/i-created-my-own-wordle-heres-how-289c361421e3)
+
 ## Possible Future works
 
 * Actual sharing of <strong>shareMessage</strong> to social handles.
