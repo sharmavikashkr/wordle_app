@@ -15,14 +15,14 @@ This component creates an input widget which accepts a 5 letter word in 5 boxes 
 This component builds a scaffold and puts together a page to accept 6 attempts for words.
 * <ins>The states</ins>
 I am maintaining 5 state variables in the home component:
-    > <strong>_attempts</strong>: holds the number of attempts executed so far.
-    > <strong>_wordColors</strong>: holds a list of 6 color codes (like ‘bggyb’; returned from the API). Each color code is passed on to the respective word_field component to fill the letter backgrounds accordingly.
-    > <strong>_wordsEnabled</strong>: holds a list of 6 bools to identify which word_field is accepting input. Other word_fields as disabled.
-    > <strong>gameover</strong>: holds a bool to store if the game is over.
-    > <strong>shareMessage</strong>: is built if the word of the day is successfully guessed and the game is over.
-* <ins>The _checkWord handler</ins> (inside Home component)
+  * <strong>_attempts</strong>: holds the number of attempts executed so far.
+  * <strong>_wordColors</strong>: holds a list of 6 color codes (like ‘bggyb’; returned from the API). Each color code is passed on to the respective word_field component to fill the letter backgrounds accordingly.
+  * <strong>_wordsEnabled</strong>: holds a list of 6 bools to identify which word_field is accepting input. Other word_fields as disabled.
+  * <strong>gameover</strong>: holds a bool to store if the game is over.
+  * <strong>shareMessage</strong>: is built if the word of the day is successfully guessed and the game is over.
+* <ins>The _checkWord handler</ins> (inside home component)
 This handler calls the wordle-api, gets the color code, and updates the components accordingly.
-* <ins>The shareMessage builder</ins>
+* <ins>The shareMessage builder</ins> (inside home component)
 This piece takes care of creating the share message if the game is successfully won.
 
 ## Possible Future works
